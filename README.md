@@ -1,9 +1,9 @@
-## Requirements.
-* `Python>=3.7.0 </br>
-* `PyTorch>=1.7 </br>
+## Requirements
+* Python>=3.7.0 </br>
+* PyTorch>=1.7 </br>
 * `pip install -r requirements.txt`
 
-## Training:
+## Training
 
 `python train.py --img 640 --cfg yolov5s.yaml --hyp hyp.scratch.yaml --batch 32 --epochs 100 --data road_sign_data.yaml --weights yolov5s.pt  --name yolo_road_det`
 
@@ -18,14 +18,15 @@
 * name: Various things about training such as train logs. Training weights would be stored in a folder named `runs/train/name` </br>
 * hyp: YAML file that describes hyperparameter choices. For examples of how to define hyperparameters, see `data/data_uno_cards.yaml`
 
-## To test your model run:
+## Testing
 
 `python val.py --data data.yaml --weights model.pt`
 
 ### Parameters:
 * data : Data YAML file that contains information about the dataset (path of images, labels) </br>
 * weights: Pretrained weights to make predictions
-## Run the inference, results will be saved to `runs/detect`
+
+## Inference, results will be saved to `runs/detect`
 
 `python detect.py --weights yolov5s.pt --img 640 --conf 0.25 --source data/images`
 
