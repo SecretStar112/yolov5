@@ -1,14 +1,16 @@
-import io
-import os
-
 from PIL import Image
+from flask import render_template, request, redirect
+from flask import current_app as app
+
+from prediction import get_prediction
+
 
 @app.route("/", methods=["GET", "POST"])
 def predict():
     """
     get:
       description: Get a predicted bounding boxes in image
-
+    
     post:
       description: Upload an image and save it to predict bounding boxes
     """
@@ -18,10 +20,8 @@ def predict():
         file = request.files["file"]
         if not file:
             return
-
-        img_bytes = file.read()
-        img = Image.open(io.BytesIO(img_bytes))
-        results = model(img, size=640)
+        
+        results = get_prediction(file)
 
         results.render()
         for img in results.imgs:
