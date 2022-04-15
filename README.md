@@ -28,10 +28,11 @@
 * data : Data YAML file that contains information about the dataset (path of images, labels) </br>
 * weights: Pretrained weights to make predictions
 
-## Inference, results will be saved to `runs/detect`
+## Inference
 
 `python detect.py --weights yolov5s.pt --img 640 --conf 0.25 --source data/images`
 
+Note: results will be saved to `runs/detect`
 ### Parameters:
 * weights: Pretrained weights to make predictions
 * img : Size of image </br>
@@ -49,3 +50,6 @@
 * Real_time_object_detection_w_webcam.ipynb : real time object detection
 
 ## Results
+ ![Image_labels](data/images/test_batch0_labels.jpg)
+ 
+ ![Image_pred](data/images/test_batch0_pred.jpg)
