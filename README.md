@@ -50,6 +50,7 @@ Note: results will be saved to `runs/detect`
 * Real_time_object_detection_w_webcam.ipynb : real time object detection
 
 ## Results
+#### Labels
  ![Image_labels](data/images/test_batch0_labels.jpg)
- 
+ #### Predictions
  ![Image_pred](data/images/test_batch0_pred.jpg)
