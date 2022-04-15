@@ -3,6 +3,8 @@
 * PyTorch>=1.7 </br>
 * `pip install -r requirements.txt`
 
+## Dataset
+  The dataset is available on download [here](https://public.roboflow.com/object-detection/uno-cards/2)
 ## Training
 
 `python train.py --img 640 --cfg yolov5s.yaml --hyp hyp.scratch.yaml --batch 32 --epochs 100 --data road_sign_data.yaml --weights yolov5s.pt  --name yolo_road_det`
