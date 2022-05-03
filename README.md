@@ -51,7 +51,12 @@ Note: results will be saved to `runs/detect`
 
 # Results
 Refer to [youtube](https://youtu.be/WnojB1qdY6s).
+
+#### Test data
+![test](data/images/yolo_tests.png)
+
 #### Labels
  ![Image_labels](data/images/test_batch0_labels.jpg)
- #### Predictions
- ![Image_pred](data/images/test_batch0_pred.jpg)
+ 
+#### Predictions
+![Image_pred](data/images/test_batch0_pred.jpg)
