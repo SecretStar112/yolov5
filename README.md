@@ -40,7 +40,7 @@ Note: results will be saved to `runs/detect`
 * source: The source of detector, which can be: single image, folder of images, Video, Webcam
 
 # Web application
-`python run_web_app.py --path path_to_model.pt`
+`python run.py --path path_to_model.pt`
 
 * path: path to trained weights
 # Google Colab stuff
