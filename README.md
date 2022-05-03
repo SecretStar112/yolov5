@@ -45,7 +45,7 @@ Note: results will be saved to `runs/detect`
 * path: path to trained weights
 # Google Colab
 
-* Training_yolov5_Colab.ipynb : train, inference using GPU </br>
+* Training_yolov5_Colab.ipynb : train, test</br>
 * Flask_Web_App.ipynb : flask application </br>
 * Real_time_object_detection_w_webcam.ipynb : real time object detection
 
