@@ -43,7 +43,7 @@ Note: results will be saved to `runs/detect`
 `python run.py --path path_to_model.pt`
 
 * path: path to trained weights
-# Google Colab stuff
+# Google Colab
 
 * Training_yolov5_Colab.ipynb : train, inference using GPU </br>
 * Flask_Web_App.ipynb : flask application </br>
