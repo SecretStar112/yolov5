@@ -1,7 +1,7 @@
 import io
 from PIL import Image
 
-from run_web_app import model
+from run import model
 
 
 def get_prediction(file):
